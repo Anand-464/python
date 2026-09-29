@@ -1,0 +1,35 @@
+class calc:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+class operation(calc):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+            
+    def add(self):
+        return self.x + self.y
+    
+    def subtract(self):
+        return self.x - self.y
+    
+    def multiply(self):
+        return self.x * self.y
+    
+    def divide(self):
+        return self.x / self.y
+    
+x = int(input("first num: "))
+y = int(input("second num: "))
+action = input("enter operation: ")
+
+obj = operation(x, y)
+
+if action == "+":
+    print("Sum is: ", obj.add())
+elif action == "-":
+    print("Difference is: ", obj.subtract())
+elif action == "*":
+    print("Product is: ", obj.multiply())
+elif action == "/":
+    print("Division is: ", obj.divide())
