@@ -32,4 +32,7 @@ elif action == "-":
 elif action == "*":
     print("Product is: ", obj.multiply())
 elif action == "/":
-    print("Division is: ", obj.divide())
+    if x == 0 or y == 0:
+        print("Division by zero is not allowed")
+    else:
+        print("Division is: ", obj.divide())
