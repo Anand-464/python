@@ -3,7 +3,7 @@ class calc:
         self.x = x
         self.y = y
         
-class operation(calc):           
+class oper(calc):           
     def add(self):
         return self.x + self.y
     
@@ -20,7 +20,7 @@ x = int(input("first num: "))
 y = int(input("second num: "))
 action = input("enter operation: ")
 
-obj = operation(x, y)
+obj = oper(x, y)
 
 if action == "+":
     print("Sum is: ", obj.add())
