@@ -3,10 +3,7 @@ class calc:
         self.x = x
         self.y = y
         
-class operation(calc):
-    def __init__(self, x, y):
-        super().__init__(x, y)
-            
+class operation(calc):           
     def add(self):
         return self.x + self.y
     
